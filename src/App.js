@@ -8,13 +8,20 @@ function App() {
   const[input,setInput] = useState("");
   const[todos,setTodos] = useState([]);
   const[editTodo,setEditTodo] = useState(null);
+
+
+  const deleteAll= ()=>{
+    setTodos([])
+  }
+
+
   return (
     <div className="container">
       <div className="app-wrapper">
         <div>
           <Header/>
         </div>
-        <div>
+        <div className="todo-parent">
           <Forms
           input={input}
           setInput={setInput}
@@ -24,6 +31,7 @@ function App() {
           setEditTodo = {setEditTodo}
           />
           <TodosList todos={todos} setTodos={setTodos} setEditTodo={setEditTodo}/>
+          <button className="delete-all" onClick={()=>{deleteAll()}}>Delete All</button>
         </div>
       </div>
     </div>

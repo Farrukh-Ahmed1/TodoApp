@@ -97,6 +97,26 @@
   font-size: 28px;
   border-radius: 50%;
 }
+.delete-all{
+  border: none;
+  background-color: rgba(255, 0, 0, 0.884);
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.todo-parent{
+  display: flex;
+  flex-direction: column;
+}
 
 .button-complete {
   color: #228b22de;
